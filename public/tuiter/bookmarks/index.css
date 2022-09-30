@@ -1,0 +1,120 @@
+.wd-black-bg {
+    background-color: black;
+}
+
+.wd-white-fg {
+    color: white;
+}
+
+.wd-light-gray-fg {
+    color: lightgray;
+}
+
+.wd-red-fg {
+    color: red;
+}
+
+.wd-font-20 {
+    font-size: 20px;
+}
+
+.wd-font-15 {
+    font-size: 15px;
+}
+
+.wd-bold {
+    font-weight: bold;
+}
+
+.wd-font-13 {
+    font-size: 13px;
+}
+
+.wd-border {
+    border-width: 1px;
+    border-style: solid;
+    border-color: RGB(47,51,54);
+}
+
+.wd-divider {
+    border-color: RGB(47,51,54);
+    border-radius: 1px;
+
+}
+
+.wd-nudge-down-12 {
+    position: relative;
+    top: 12px
+}
+
+.wd-nudge-right-12 {
+    position: relative;
+    left: 12px
+}
+
+.wd-nudge-right-24 {
+    position: relative;
+    left: 24px
+}
+
+.wd-padding-left-16 {
+    padding-left: 16px;
+}
+
+.wd-padding-left-12 {
+    padding-left: 12px;
+}
+
+.wd-padding-all-around-12 {
+    padding: 12px;
+}
+
+.wd-padding-bottom-12 {
+    padding-bottom: 12px;
+}
+
+.wd-padding-right-12 {
+    padding-right: 12px;
+}
+
+.wd-padding-right-16 {
+    padding-right: 12px;
+}
+
+.wd-padding-right-60 {
+    padding-right: 60px;
+}
+
+.wd-padding-top-12 {
+    padding-top: 12px;
+}
+
+.wd-circular {
+    border-radius: 24px;
+}
+
+.wd-rounded-top {
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+}
+
+.wd-rounded-bottom {
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+.wd-set-max-width {
+    width: 506px;
+}
+
+.wd-float-left {
+    float:left;
+}
+
+.wd-float-right {
+    float:right;
+}
+
+.wd-inline-block {
+    display: inline-block;
+}
