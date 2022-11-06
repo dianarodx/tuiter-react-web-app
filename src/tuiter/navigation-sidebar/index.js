@@ -1,5 +1,5 @@
 import React from "react";
-import { Twitter } from "react-bootstrap-icons";
+import {Twitter} from "react-bootstrap-icons";
 import { HouseFill } from "react-bootstrap-icons";
 import { Hash } from "react-bootstrap-icons";
 import { BellFill } from "react-bootstrap-icons";
@@ -8,6 +8,7 @@ import { BookmarkFill } from "react-bootstrap-icons";
 import { ListCheck } from "react-bootstrap-icons";
 import { PersonFill } from "react-bootstrap-icons";
 import { ChatDotsFill } from "react-bootstrap-icons";
+import { Asterisk} from "react-bootstrap-icons";
 
 
 const NavigationSidebar = (
@@ -25,6 +26,10 @@ const NavigationSidebar = (
             <a className={`list-group-item
                     ${active === 'explore'?'active':''}`}>
                 <Hash/> Explore
+            </a>
+            <a className={`list-group-item
+                    ${active === 'lab'?'active':''}`}>
+                <Asterisk/> Labs
             </a>
             <a className={`list-group-item
                     ${active === 'notifications'?'active':''}`}>
