@@ -2,7 +2,7 @@ import React from "react";
 import { CheckCircleFill, Chat, HeartFill, Heart, Recycle, Share }
     from "react-bootstrap-icons";
 import {useDispatch} from "react-redux";
-import {deleteTuit} from "./tuits-reducer";
+import {deleteTuitThunk} from "../../services/tuits-thunks";
 import TuitStats from "./tuit-stats";
 
 const TuitItem = (
@@ -22,7 +22,7 @@ const TuitItem = (
 ) => {
     const dispatch = useDispatch();
     const deleteTuitHandler = (id) => {
-        dispatch(deleteTuit(id));
+        dispatch(deleteTuitThunk(id));
     }
     return(
         <li className="list-group-item">
@@ -37,8 +37,10 @@ const TuitItem = (
                               onClick={() => deleteTuitHandler(post._id)}> X </span>
                     </div>
                     {post.tuit}
-                    <TuitStats
-                        key={post._id} stats={post}/>
+                    <div>
+                        Likes: {post.likes}
+                        <i className="bi bi-heart-fill me-2 text-danger"/>
+                    </div>
                 </div>
             </div>
         </li>
