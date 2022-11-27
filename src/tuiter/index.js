@@ -1,5 +1,4 @@
 import React from "react";
-import ExploreComponent from "./explore";
 import NavigationSidebar from "./navigation-sidebar";
 import WhoToFollowList from "./who-to-follow-list";
 import HomeComponent from "./home";
@@ -9,7 +8,6 @@ import tuitsReducer from "./tuits/tuits-reducer";
 import { configureStore }
     from '@reduxjs/toolkit';
 import {Provider} from "react-redux";
-import TuitList from "./tuits/tuit-list";
 const store = configureStore(
     {reducer: {who: whoReducer, tuitsData: tuitsReducer}});
 

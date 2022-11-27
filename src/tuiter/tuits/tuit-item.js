@@ -1,10 +1,8 @@
 import React from "react";
-import { CheckCircleFill, Chat, HeartFill, Heart, Recycle, Share }
+import { CheckCircleFill}
     from "react-bootstrap-icons";
 import {useDispatch} from "react-redux";
 import {deleteTuitThunk} from "../../services/tuits-thunks";
-import TuitStats from "./tuit-stats";
-
 const TuitItem = (
     {
         post = {
@@ -28,7 +26,7 @@ const TuitItem = (
         <li className="list-group-item">
             <div className="row">
                 <div className="col-2">
-                    <img className="rounded-circle" height={48} src={`/images/${post.image}`}/>
+                    <img className="rounded-circle" height={48} src={`/images/${post.image}`} alt={}/>
                 </div>
                 <div className="col-10">
                     <div> <span className="fw-bolder"> {post.userName}  <CheckCircleFill/> </span>
